@@ -6,7 +6,9 @@
     "composite": false,
     "jsx": "react",
     "baseUrl": ".",
-    "target": "es5"
+    "target": "ES5",
+    "module": "CommonJS",
+    "lib": ["DOM", "ESNext"]
   },
   "include": ["src"],
   "exclude": [
@@ -19,15 +21,7 @@
     "**/*.stories.js",
     "**/*.stories.ts"
   ],
-  "references": [
-    {
-      "path": "../graphql-language-service/tsconfig.esm.json"
-    },
-    {
-      "path": "../graphql-language-service-utils/tsconfig.esm.json"
-    },
-    {
-      "path": "../graphiql-toolkit/tsconfig.esm.json"
-    }
-  ]
+  "references": [{
+    "path": "../graphiql-toolkit"
+  }]
 }
